@@ -1,15 +1,14 @@
 # apache-parquet-avro
 Experiment with Apache Parquet and Apache Avro
 
-Using Spark2.1.0 binary prebuilt with Hadoop 2.7
+## Using Spark2.1.0 binary prebuilt with Hadoop 2.7
 
-Learnt how to use 3rd party / external SPARK packages like spark-csv, spark-avro (parquet inbuilt)
+## Learnt how to use 3rd party / external SPARK packages like spark-csv, spark-avro (parquet inbuilt)
 
-Things that finally worked
+# Steps 
 1. Call pyspark with Avro package  
 
-[root@chai chai]# pyspark --packages com.databricks:spark-avro_2.11:3.2.0
-
+`[root@chai chai]# pyspark --packages com.databricks:spark-avro_2.11:3.2.0`
 
 Without Avro package it throws error -
 ```
@@ -20,7 +19,7 @@ Download package. Unzip it. Put it in the directory and rename folder spark-avro
 
 2. Reading Avro file  
 
-`df1 = sqlContext.read.load("/usr/local/spark/examples/src/main/resources/users.avro","com.databricks.spark.avro")`
+`>>> df1 = sqlContext.read.load("/usr/local/spark/examples/src/main/resources/users.avro","com.databricks.spark.avro")`
 
 
 3. Reading Parquet file
@@ -45,9 +44,7 @@ Following errors prop up
 Command - pyspark
 
 1. Warning -
-
-
- `WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
+`WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
 
  Possible Solution - 
  1. http://stackoverflow.com/questions/23572724/why-does-bin-spark-shell-give-warn-nativecodeloader-unable-to-load-native-had
@@ -55,7 +52,7 @@ Command - pyspark
 
 2. Exception -
 
- ```
+```
  java.sql.SQLException: Unable to open a test connection to the given database. 
  JDBC url = jdbc:derby:;databaseName=metastore_db;create=true, username = APP. 
  Terminating connection pool (set lazyInit to true if you expect to start your database after your app). 
@@ -82,7 +79,7 @@ $ ps -ef | grep spark-shell
 $ kill -9 Spark-Shell-processID
 ```
 
-Doubt -
+## Doubt -
 ```
 [root@chai chai]# ps -ef | grep spark-shell
 root     18382 18362  1 20:10 pts/1    00:00:48 /usr/lib/jvm/jdk1.8.0_121/bin/java -cp /usr/local/spark/conf/:/usr/local/spark/jars/* -Xmx1g org.apache.spark.deploy.SparkSubmit --name PySparkShell --packages com.databricks:spark-avro_2.11:3.2.0 pyspark-shell
@@ -114,42 +111,45 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 ```
 
 Possible Solutions 
-1.https://www.slf4j.org/codes.html#StaticLoggerBinder 
-2.https://teamtreehouse.com/community/i-got-an-error-slf4j-failed-to-load-class-orgslf4jimplstaticloggerbinder 
-3.http://sparkjava.com/documentation.html#examples
+1. https://www.slf4j.org/codes.html#StaticLoggerBinder 
+2. https://teamtreehouse.com/community/i-got-an-error-slf4j-failed-to-load-class-orgslf4jimplstaticloggerbinder 
+3. http://sparkjava.com/documentation.html#examples
 
 
 
 
 # Sources - 
-To read write Parquet files - http://www.kdnuggets.com/2015/10/ibm-seti-spark-sql-parquets.html
-Spark Packages - https://spark-packages.org/
-PySpark tutorial - https://github.com/mahmoudparsian/pyspark-tutorial/tree/master/howto (edited)
 
-https://parquet.apache.org/documentation/latest/
+1. To read write Parquet files - http://www.kdnuggets.com/2015/10/ibm-seti-spark-sql-parquets.html
 
-https://spark.apache.org/docs/1.6.1/sql-programming-guide.html
+2. Spark Packages - https://spark-packages.org/
 
-https://www.appsflyer.com/blog/the-bleeding-edge-spark-parquet-and-s3/ (edited)
+3. PySpark tutorial - https://github.com/mahmoudparsian/pyspark-tutorial/tree/master/howto 
 
-https://www.svds.com/how-to-choose-a-data-format/ (edited)
+4. Apache Parquet Documentation - https://parquet.apache.org/documentation/latest/
 
-https://groups.google.com/forum/#!topic/parquet-dev/lfWanFOc040
+5. SQL Programming - https://spark.apache.org/docs/1.6.1/sql-programming-guide.html
 
-http://apache-spark-user-list.1001560.n3.nabble.com/Write-to-Parquet-File-in-Python-td22186.html (edited)
+6. Parquet + S3 - https://www.appsflyer.com/blog/the-bleeding-edge-spark-parquet-and-s3/ 
 
-https://developer.ibm.com/hadoop/2015/12/03/parquet-for-spark-sql/ (edited)
+7. https://www.svds.com/how-to-choose-a-data-format/ 
 
-http://www.kdnuggets.com/?s=parquet
+8. https://groups.google.com/forum/#!topic/parquet-dev/lfWanFOc040
 
-http://www.kdnuggets.com/2015/10/ibm-seti-spark-sql-parquets.html
+9. http://apache-spark-user-list.1001560.n3.nabble.com/Write-to-Parquet-File-in-Python-td22186.html 
 
-http://www.kdnuggets.com/2015/09/spark-sql-real-time-analytics.html
+10. Parquet for Spark SQL - https://developer.ibm.com/hadoop/2015/12/03/parquet-for-spark-sql/ 
 
-http://spark.apache.org/docs/2.0.0/api/python/pyspark.sql.html
+11. Parquet - http://www.kdnuggets.com/?s=parquet
 
-https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/ (edited)
+12. Spark SQL Parquet - http://www.kdnuggets.com/2015/10/ibm-seti-spark-sql-parquets.html
 
-https://www.analyticsvidhya.com/blog/2016/09/comprehensive-introduction-to-apache-spark-rdds-dataframes-using-pyspark/ (edited)
+13. SparkSQL Real-time analytics - http://www.kdnuggets.com/2015/09/spark-sql-real-time-analytics.html
 
-https://www.dezyre.com/apache-spark-tutorial/pyspark-tutorial (edited)
+14. http://spark.apache.org/docs/2.0.0/api/python/pyspark.sql.html
+
+15. Spark Dataframe Operations - https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/ 
+
+16. Intro to RDDs - https://www.analyticsvidhya.com/blog/2016/09/comprehensive-introduction-to-apache-spark-rdds-dataframes-using-pyspark/ 
+
+17. PySpark TUtorial - https://www.dezyre.com/apache-spark-tutorial/pyspark-tutorial 
