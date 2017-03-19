@@ -65,7 +65,7 @@ All these 3 exceptions went thanks to
 
 http://stackoverflow.com/questions/34465516/caused-by-error-xsdb6-another-instance-of-derby-may-have-already-booted-the-da
 
-** _ Solution - _ **
+**_Solution -_**
 ```
 $ ps -ef | grep spark-shell
 
@@ -97,7 +97,7 @@ bash: kill: (20312) - No such process
 
 `WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
 
-** _ Possible Solution - _ **
+**_Possible Solution -_**
 + http://stackoverflow.com/questions/23572724/why-does-bin-spark-shell-give-warn-nativecodeloader-unable-to-load-native-had
 + https://discuss.pivotal.io/hc/en-us/articles/219403388-How-to-eliminate-error-message-WARN-util-NativeCodeLoader-Unable-to-load-native-hadoop-library-for-your-platform-with-gphdfs 
 
@@ -113,7 +113,7 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ```
 
-** _ Possible Solutions - _ **
+**_Possible Solutions -_**
 1. https://www.slf4j.org/codes.html#StaticLoggerBinder 
 2. https://teamtreehouse.com/community/i-got-an-error-slf4j-failed-to-load-class-orgslf4jimplstaticloggerbinder 
 3. http://sparkjava.com/documentation.html#examples
