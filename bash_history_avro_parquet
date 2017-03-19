@@ -1,0 +1,283 @@
+chmod 777 spark/
+  421  mv spark/ spark-1.6.1-bin-hadoop2.6/
+  422  ls
+  423  cd spark-1.6.1-bin-hadoop2.6/bin/
+  424  ./spark-submit ../examples/src/main/python/mllib/kmeans.py
+  425  mvn -DskipTests clean package
+  426  cd ..
+  427  which scala
+  428  scala -version
+  429  hadoop version
+  430  cd ..
+  431  rm -rf spark-1.6.1-bin-hadoop2.6/
+  432  cd /home/chai/Downloads/
+  433  tar -xzvf spark-2.1.0-bin-hadoop2.7.tgz 
+  434  mv spark-2.1.0-bin-hadoop2.7 /usr/local/spark
+  435  hadoop version
+  436  where java
+  437  whereis java
+  438  vim /etc/hadoop/hadoop-env.sh 
+  439  whereis jre
+  440  vim /etc/hadoop/hadoop-env.sh
+  441  hadoop version
+  442  vim /etc/hadoop/hadoop-env.sh
+  443  vim /etc/hadoop/hadoop-env.sh
+  444  hadoop version
+  445  sudo vim ~/.bashrc
+  446  source ~/.bashrc
+  447  sudo vim ~/.bashrc
+  448  source ~/.bashrc
+  449  cd $SPARK_HOME
+  450  ./bin/spark-shell 
+  451  clear
+  452  ./bin/spark-submit –class org.apache.spark.examples.SparkPi –master local[*] lib/spark-example* 10
+  453  sudo vim ~/.bashrc
+  454  echo $JAVA_HOME
+  455  whereis java
+  456  sudo vim ~/.bashrc
+  457  source ~/.bashrc
+  458  echo $JAVA_HOME
+  459  echo $SPARK_HOME
+  460  ./bin/spark-submit --help
+  461  vim /etc/hadoop/hadoop-env.sh
+  462  ./bin/spark-submit --help
+  463  sudo vim ~/.bashrc
+  464  source ~/.bashrc
+  465  ./bin/spark-submit --help
+  466  vim /etc/hadoop/hadoop-env.sh
+  467  ls
+  468  cd conf/
+  469  ls
+  470  cd ..
+  471  cd ..
+  472  vim spark/conf/spark-env.sh.template 
+  473  vim spark/conf/spark-defaults.conf.template 
+  474  ./spark/bin/spark-submit –class org.apache.spark.examples.SparkPi –master local[*] lib/spark-example* 10
+  475  cd ..
+  476  ./spark/bin/spark-submit –class org.apache.spark.examples.SparkPi –master local[*] lib/spark-example* 10
+  477  ./bin/spark-submit –class org.apache.spark.examples.SparkPi –master local[*] lib/spark-example* 10
+  478  cd /usr/local/spark/
+  479  ./bin/spark-submit –class org.apache.spark.examples.SparkPi –master local[*] lib/spark-example* 10
+  480  ./bin/spark-submit –-class org.apache.spark.examples.SparkPi –master local[*] lib/spark-example* 10
+  481  ./bin/spark-submit --class org.apache.spark.examples.SparkPi –master local[*] lib/spark-example* 10
+  482  ./bin/spark-submit --class SparkPi –master local[*] lib/spark-example* 10
+  483  ./bin/spark-submit --class SparkPi --master local[*] lib/spark-example* 10
+  484  ./bin/spark-submit --class SparkPi --master local[*] ./examples/ 10
+  485  ./bin/spark-submit --class SparkPi --master local[*] 10
+  486  ./bin/run-example SparkPi 10
+  487  vim /etc/hadoop/hadoop-env.sh
+  488  source /etc/hadoop/hadoop-env.sh 
+  489  ./bin/run-example SparkPi 10
+  490  cd bin/
+  491  ls
+  492  cd ..
+  493  cd conf/
+  494  ls
+  495  vim spark-defaults.conf.template 
+  496  sudo vim ~/.bashrc
+  497  vim spark-env.sh.template 
+  498  source /etc/hadoop/hadoop-env.sh 
+  499  vim /etc/hadoop/hadoop-env.sh 
+  500  source /etc/hadoop/hadoop-env.sh 
+  501  ../bin/run-example SparkPi 10
+  502  vim /etc/hadoop/hadoop-env.sh 
+  503  source /etc/hadoop/hadoop-env.sh 
+  504  vim /etc/hadoop/hadoop-env.sh 
+  505  source /etc/hadoop/hadoop-env.sh 
+  506  ../bin/run-example SparkPi 10
+  507  vim /etc/hadoop/hadoop-env.sh 
+  508  source /etc/hadoop/hadoop-env.sh 
+  509  ../bin/run-example SparkPi 10
+  510  vim ~/.bashrc
+  511  source ~/.bashrc
+  512  pyspark
+  513  echo $PYTHON_PATH
+  514  echo $SPARK_PATH
+  515  vim ~/.bashrc
+  516  echo $PATH
+  517  cd ..
+  518  cd ..
+  519  pyspark
+  520  python/pyspark
+  521  cd spark/
+  522  ls
+  523  vim ~/.bashrc
+  524  source ~/.bashrc
+  525  echo $PATH
+  526  vim ~/.bashrc
+  527  source ~/.bashrc
+  528  echo $PATH
+  529  vim ~/.bashrc
+  530  vim
+  531  cd ..
+  532  cd ..
+  533   cd /home/
+  534  ls
+  535  ls -al
+  536  rm -rf spark/
+  537  rm
+  538  ls
+  539  ls
+  540  vim
+  541  vi
+  542  exit
+  543  x
+  544  ls
+  545  echo $PATH
+  546  export PATH=/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin/c++:/usr/bin/make:/home/chai/.local/bin:/home/chai/bin:/usr/local/go/bin:/pachy/bin:/protoc-3.0.0-beta-3-linux-x86_64/protoc:/mongodb-linux-x86_64-rhel70-3.2.7/bin:/spark-1.6.1-bin-hadoop2.6/bin:/rstudio-0.99.902/bin:/sublime_text_3:/usr/local/go/bin:/usr/lib/jvm/java/java-1.8.0/jre/bin:/run/media/chai/a6296a23-ce66-49e6-990e-20e6dbc51df4/anaconda/bin:/usr/local/spark/bin:/usr:/home/chai/.local/bin:/home/chai/bin:/run/media/chai/a6296a23-ce66-49e6-990e-20e6dbc51df4/anaconda/bin:/usr/local/spark/bin:/usr
+  547  ls
+  548  cd ..
+  549  vim
+  550  vim /root/.bashrc
+  551  source /root/.bashrc
+  552  ls
+  553  echo $PATH
+  554  cd /usr/lib
+  555  ls
+  556  cd jvm
+  557  ls
+  558  exit
+  559  vim /root/.bashrc
+  560  vim /root/.bashrc
+  561  source /root/.bashrc
+  562  pyspark
+  563  java
+  564  java -version
+  565  javac
+  566  rm -rf /usr/local/spark/
+  567  scala -version
+  568  echo $PATH
+  569  vim root/.bashrc
+  570  vim root/.bashrc
+  571  cd home/chai/Downloads/
+  572  ls
+  573  tar -xzvf spark-2.1.0-bin-hadoop2.7.tgz 
+  574  mv spark-2.1.0-bin-hadoop2.7 /usr/local/spark
+  575  exit
+  576  chmod 777 /usr/lib
+  577  chmod 777 /usr/lib/jvm/ -R
+  578  chmod 777 -R /usr/lib/jvm/ 
+  579  rm -rf -R /usr/lib/jvm/
+  580  chmod 777 -R /usr/lib
+  581  chmod 777 -R /usr/lib/jdk*
+  582  chmod 777 -R /usr/lib/jav*
+  583  dnf list installed java
+  584  dnf list installed *java*
+  585  rm -rf /usr/java/jdk1.7.0_80/
+  586  rm -rf /usr/java/jre1.8.0_111/
+  587  rm -rf /usr/bin/java
+  588  vim root/.bashrc
+  589  sou
+  590  source /root/.bashrc
+  591  pyspark
+  592  cd /usr/local/spark/
+  593  ls
+  594  cd bin/
+  595  ls
+  596  vim spark-submit
+  597  vim spark-class
+  598  echo $JAVA_PATH
+  599  source /root/.bashrc
+  600  echo $JAVA_PATH
+  601  vim /root/.bashrc
+  602  spark-submit 
+  603  lsblk
+  604  mount /dev/sda7 
+  605  fdisk -l
+  606  cd /mnt/
+  607  ls
+  608  mkdir mount_point
+  609  cd ..
+  610  mount /dev/sda7 /mnt/mount_point/
+  611  lsblk
+  612  fdisk -l
+  613  hadoop version
+  614  cd /mnt/mount_point/
+  615  cd hadoop2x-eclipse-plugin-master/src/contrib/eclipse-plugin/
+  616  wheris hadoop
+  617  whereis hadoop
+  618  ant jar -Dversion=2.4.1 -Dhadoop.version=2.4.1 -Declipse.home=/opt/eclipse -Dhadoop.home=/usr/share/hadoop
+  619  javac
+  620  echo $PATH
+  621  hadoop
+  622  spark-shell
+  623  pyspark
+  624  cd /usr/local/spark/
+  625  cd examples/src/main/resources/
+  626  ls
+  627  cd ../../../..
+  628  pyspark
+  629  pip install py4j
+  630  ./bin/run-example SparkPi 10
+  631  cp conf/log4j.properties.template conf/log4j.properties
+  632  vim conf/log4j.properties
+  633  vim /root/.bashrc
+  634  . /root/.bashrc
+  635  /opt/lampp/lampp start
+  636  dnf install mysql-connector java
+  637  dnf install mysql-connector-java
+  638  echo $PYTHON_PATH
+  639  ./bin/pyspark --packages
+  640  mv /home/chai/Downloads/spark-csv_2.11-1.5.0.jar /usr/local/spark/
+  641  mv /home/chai/Downloads/spark-csv-1ae649285462df1af1411593e2abe589de2d704c/ /usr/local/spark/
+  642  mv /usr/local/spark/spark-csv-1ae649285462df1af1411593e2abe589de2d704c/ /usr/local/spark/spark-csv_2.11-1.5.0
+  643  ls
+  644  rm -rf spark-csv_2.11-1.5.0.jar 
+  645  pyspark --packages spark-csv_2.11-1.5.0/
+  646  pyspark --packages com.databricks:spark-csv_2.11-1.5.0
+  647  ./bin/pyspark --packages com.databricks:spark-csv_2.11:1.5.0
+  648  cd /tmp/
+  649  ls
+  650  cd hive/
+  651  ls
+  652  cd root/
+  653  ls
+  654  cd ..
+  655  cd ..
+  656  grep spark-warehouse
+  657  cd /usr/local/spark/
+  658  pyspark 
+  659  pyspark 
+  660  ps -ef | grep spark-shell
+  661  kill -9 13185
+  662  kill -9 13364
+  663  kill -9 14222
+  664  kill -9 15012
+  665  ps -ef | grep spark-shell
+  666  kill -9 15811
+  667  kill -9 15634
+  668  kill -9 15811
+  669  ps -ef | grep spark-shel
+  670  kill -9 15813
+  671  ps -ef | grep spark-shel
+  672  exit
+  673  exit
+  674  mv /home/chai/Downloads/spark-avro-e28e45609b0178634a91ad8807f5f4be93590fef /usr/local/spark/spark-avro_2.11:3.2.0
+  675  cd ..
+  676  cd ..
+  677  cd ..
+  678  cd ..
+  679  ls
+  680  vim /home/chai/namesAndFavColors.parquet/part-00000-5da235a6-e575-4191-9417-68c12151ea21.snappy.parquet 
+  681  vim /home/chai/namesAndFavColors.parquet/_SUCCESS 
+  682  ps -ef | grep spark-shel
+  683  kill -9 16307
+  684  pyspark
+  685  pyspark --packages com.databricks:spark-avro_2.11:3.2.0
+  686  ps -ef | grep spark-shell
+  687  kill -9 16329
+  688  kill -9 18191
+  689  kill -9 18334
+  690  ps -ef | grep spark-shell
+  691  pyspark --packages com.databricks:spark-avro_2.11:3.2.0
+  692  ps -ef | grep spark-shell
+  693  kill -9 18382
+  694  kill -9 20312
+  695  pyspark --packages com.databricks:spark-csv_2.11:1.5.0
+  696  pyspark --packages com.databricks:spark-csv_2.11:1.5.0 com.databricks:spark-avro_2.11:3.2.0
+  697  pyspark --packages com.databricks:spark-csv_2.11:1.5.0,com.databricks:spark-avro_2.11:3.2.0
+  698  ps -ef | grep spark-shell
+  699  kill -9 20455
+  700  kill -9 20964
+  701  pyspark --packages com.databricks:spark-csv_2.11:1.5.0,com.databricks:spark-avro_2.11:3.2.0
+
