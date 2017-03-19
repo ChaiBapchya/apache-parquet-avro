@@ -39,19 +39,7 @@ Download package. Unzip it. Put it in the directory and rename folder spark-avro
 ```
 
 
-Following errors prop up
-
-Command - pyspark
-
-1. Warning -
-
-`WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
-
-Possible Solution - 
-+ http://stackoverflow.com/questions/23572724/why-does-bin-spark-shell-give-warn-nativecodeloader-unable-to-load-native-had
-+ https://discuss.pivotal.io/hc/en-us/articles/219403388-How-to-eliminate-error-message-WARN-util-NativeCodeLoader-Unable-to-load-native-hadoop-library-for-your-platform-with-gphdfs 
-
-2. Exception -
+# Resolved Error
 
 ```
  java.sql.SQLException: Unable to open a test connection to the given database. 
@@ -73,7 +61,7 @@ All these 3 exceptions went thanks to
 
 http://stackoverflow.com/questions/34465516/caused-by-error-xsdb6-another-instance-of-derby-may-have-already-booted-the-da
 
-Solution -
+**_Solution -_**
 ```
 $ ps -ef | grep spark-shell
 
@@ -99,19 +87,29 @@ bash: kill: (20312) - No such process
 ```
 
 
-3. Warning -
+# Unresolved 
+
+## 1. Warning -
+
+`WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable`
+
+**_Possible Solution - _**
++ http://stackoverflow.com/questions/23572724/why-does-bin-spark-shell-give-warn-nativecodeloader-unable-to-load-native-had
++ https://discuss.pivotal.io/hc/en-us/articles/219403388-How-to-eliminate-error-message-WARN-util-NativeCodeLoader-Unable-to-load-native-hadoop-library-for-your-platform-with-gphdfs 
+
+## 2. Warning -
 
 `WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException`
 
 
-4. Error
+## 3. Error
 ```
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ```
 
-Possible Solutions 
+**_Possible Solutions - _**
 1. https://www.slf4j.org/codes.html#StaticLoggerBinder 
 2. https://teamtreehouse.com/community/i-got-an-error-slf4j-failed-to-load-class-orgslf4jimplstaticloggerbinder 
 3. http://sparkjava.com/documentation.html#examples
